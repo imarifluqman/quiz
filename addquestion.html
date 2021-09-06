@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1 id="head">welcome to jawan pakistan quiz app</h1>
+        </header>
+
+        <!-- ===========================================Admin Panel==================================== -->
+
+        <div class="admin" id="admin">
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 95%;">
+                <h1>Add Question</h1>
+                <button onclick="logout()">SignOut</button>
+            </div>
+            <input type="text" placeholder="Enter your Question" name="" id="question">
+            <fieldset>
+                <legend>Options</legend>
+                <input type="text" placeholder="Enter Answer's Option 1" name="" id="option1">
+                <input type="text" placeholder="Enter Answer's Option 2" name="" id="option2">
+                <input type="text" placeholder="Enter Answer's Option 3" name="" id="option3">
+                <input type="text" placeholder="Enter Answer's Option 4" name="" id="option4">
+                <hr>
+                <input type="text" placeholder="Enter Currect Answer Here" name="" id="currectAns">
+
+            </fieldset>
+            <button onclick="addQuestion()">Add Question</button>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDica6Z_-hsFTo30Ti_rLFaDGRXplHKT9Y",
+            authDomain: "quizapp-jpak.firebaseapp.com",
+            projectId: "quizapp-jpak",
+            storageBucket: "quizapp-jpak.appspot.com",
+            messagingSenderId: "409185963059",
+            appId: "1:409185963059:web:fcaa7ebec07967960aa746",
+            measurementId: "G-ENK6MSF5KY"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

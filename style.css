@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #001219;
+    position: relative;
+
+}
+.main header{
+    box-shadow: 0 0 10px rgb(255 255 255 / 40%);
+
+}
+.main header h1{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #000000;
+    padding: 10px;
+}
+.login{
+    width: 330px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255 255 255 / 40%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+
+}
+.login .h4 ,
+.or{
+    font-size: 18px;
+    margin-bottom: 15px;
+
+}
+.google{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.signin{
+    width: 80%;
+    text-align: center;
+}
+.signin input{
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #001219;
+    outline: none;
+    padding: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    font-size: 16px;
+
+}
+.signin button{
+    width: 100%;
+    background-color: #001219 ;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+
+}
+.signin button:hover{
+    background-color: #023246 ;
+
+}
+.google img{
+    width: 35px;
+    margin: 0 5px;
+}
+.google button{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: red;
+    cursor: pointer;
+    font-weight:600;
+    color: white;
+}
+.google .facebook{
+    background-color: #3b5998;
+}
+hr{
+    width: 100%;
+    margin: 5px 0;
+}
+a{
+    margin: 15px;
+    cursor: pointer;
+}
+
+
+
+/* ===========================================Admin Panel==================================== */
+
+.admin{
+width: 90%;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-radius: 10px;
+box-shadow: 0 0 10px rgb(255 255 255 / 40%);
+margin-top: 20px;
+}
+.admin h1{
+    /* margin: 20px 0 10px 0; */
+}
+.admin input{
+    display: block;
+    width: 90%;
+    font-size: 16px;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.admin input:focus{
+    border: 1px solid blue;
+
+}
+fieldset{
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+fieldset legend{
+    padding: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+fieldset input{
+    margin: 15px auto;
+}
+.admin button{
+    background-color: #001219 ;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%); 
+    transition: all 0.3s ease;
+}
+.admin button:hover{
+    background-color: #023246 ;
+
+}
+
+
+/* ==================================================Quiz Panel================================================ */
+.quizpanel{
+    width: 90%;
+    height: 500px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255 255 255 / 40%);
+    padding: 20px;
+}
+.q_num{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.q_count{
+    font-weight: bold;
+    font-size: 20px;
+}
+.q_num h1{
+    font-size: 18px;
+}
+.current_q{
+    font-size: 30px;
+}
+.quest{
+    margin: 10px 50px;
+}
+.quizpanel fieldset{
+    margin: 0 auto;
+    padding: 20px;
+}
+.quizpanel fieldset button{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 18px;
+    background-color: #001219 ;
+    outline: none;
+    border: none;
+    padding: 10px 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%); 
+    transition: all 0.3s ease;
+}
+.quizpanel fieldset button:hover,
+.nextbtn:hover{
+    background-color: #023246 ;
+
+}
+.btnBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px 0 20px;
+}
+.nextbtn{
+    background-color: #001219 ;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%); 
+    transition: all 0.3s ease;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    .main header h1{
+        color: white;
+        text-align: center;
+        text-transform: capitalize;
+        background-color: #000000;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* ===========================================Admin Panel==================================== */
+
+    .admin h1{
+        font-size: 18px;
+    }
+
+
+/* ==================================================Quiz Panel================================================ */
+
+    .quizpanel{
+        width: 90%;
+        height: 550px;
+
+    }
+
+    .quest{
+        margin: 20px;
+    }
+
+    .quizpanel fieldset button{
+        font-size: 15px;
+}
+.btnBox{
+    margin: 20px 0px 0 0px;
+}
+
+}
